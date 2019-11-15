@@ -10,11 +10,11 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  region: "eu-central-1"
   access_key_id: 
     secure: "$AWS_ACCESS_KEY"
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
-  region: "eu-central-1"
   app: "docker"
   env: "Docker-env"
   bucket_name: "elasticbeanstalk-eu-central-1-630211744078"
