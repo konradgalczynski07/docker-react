@@ -15,6 +15,7 @@ deploy:
   env: "Docker-env"
   bucket-name: "elasticbeanstalk-eu-central-1-630211744078"
   bucket_path: "docker"
+  edge: true
   on:
     branch: master
   access_key_id: 
